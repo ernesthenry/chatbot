@@ -1,10 +1,10 @@
 # The Chatbot
 
-The Chatbot is a conversational agent built using [LangGraph](https://github.com/langchain-ai/langgraph) and Streamlit. It integrates an Anthropic LLM (Claude 3.5) with a web search tool (Tavily) and maintains conversation state using LangGraph's memory checkpointing. This project serves as a starting point for building more advanced, stateful, multi-turn conversational agents.
+The Chatbot is a conversational agent built using [LangGraph](https://github.com/langchain-ai/langgraph) and Streamlit. It integrates an OpenAI LLM (GPT-3.5-Turbo) with a web search tool (Tavily) and maintains conversation state using LangGraph's memory checkpointing. This project serves as a starting point for building more advanced, stateful, multi-turn conversational agents.
 
 ## Features
 
-- **LLM-Powered Chat:** Leverages Anthropic's Claude model to generate responses.
+- **LLM-Powered Chat:** Leverages OpenAI's GPT models to generate responses.
 - **Tool Integration:** Uses Tavily search to fetch up-to-date information when needed.
 - **State Management:** Maintains conversation context with LangGraph's memory checkpointing.
 - **Streamlit UI:** Provides an interactive web interface for chatting.
@@ -18,7 +18,7 @@ Here's a visual preview of the chatbot in action:
 
 *The chatbot interface showing a sample conversation with web search integration.*
 
-*Example of the chatbot using the search tool to answer a question.*
+You can add additional screenshots as needed:
 
 ## Installation
 
@@ -37,6 +37,7 @@ chatbot/
 ├── requirements.txt   # Project dependencies
 ├── README.md          # This file
 ├── screenshots/       # Directory containing application screenshots
+├── .env               # Environment variables (not tracked by Git)
 └── .gitignore         # Files/directories to ignore in Git
 ```
 
@@ -64,10 +65,10 @@ pip install -r requirements.txt
 
 ## Configuration
 
-The application requires API keys for Anthropic and Tavily. You can set these as environment variables or use a `.env` file. For example, create a `.env` file with:
+The application requires API keys for OpenAI and Tavily. You can set these as environment variables or use a `.env` file. For example, create a `.env` file with:
 
 ```
-ANTHROPIC_API_KEY=your_anthropic_api_key_here
+OPENAI_API_KEY=your_openai_api_key_here
 TAVILY_API_KEY=your_tavily_api_key_here
 ```
 
