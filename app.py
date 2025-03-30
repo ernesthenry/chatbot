@@ -52,7 +52,7 @@ memory = MemorySaver()
 graph = graph_builder.compile(checkpointer=memory)
 
 # --- Streamlit UI Setup ---
-st.title("Thechtabot Chatbot")
+st.title("The Chatbot")
 st.markdown("Welcome to Thechtabot! Start chatting below. Type 'quit', 'exit', or 'q' to reset.")
 
 # Initialize conversation state in session_state if it doesn't exist.
