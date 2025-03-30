@@ -6,9 +6,19 @@ The Chatbot is a conversational agent built using [LangGraph](https://github.com
 
 - **LLM-Powered Chat:** Leverages Anthropic's Claude model to generate responses.
 - **Tool Integration:** Uses Tavily search to fetch up-to-date information when needed.
-- **State Management:** Maintains conversation context with LangGraph’s memory checkpointing.
+- **State Management:** Maintains conversation context with LangGraph's memory checkpointing.
 - **Streamlit UI:** Provides an interactive web interface for chatting.
 - **Easy Deployment:** Ready-to-use setup for local testing and deployment on platforms like Streamlit Cloud.
+
+## Screenshots
+
+Here's a visual preview of the chatbot in action:
+
+![Chatbot Interface](images/img.png)
+
+*The chatbot interface showing a sample conversation with web search integration.*
+
+*Example of the chatbot using the search tool to answer a question.*
 
 ## Installation
 
@@ -26,6 +36,7 @@ chatbot/
 ├── app.py             # Main Streamlit application file
 ├── requirements.txt   # Project dependencies
 ├── README.md          # This file
+├── screenshots/       # Directory containing application screenshots
 └── .gitignore         # Files/directories to ignore in Git
 ```
 
@@ -87,4 +98,3 @@ Contributions are welcome! Please open issues or submit pull requests with impro
 ## License
 
 This project is licensed under the [MIT License](LICENSE).
-
